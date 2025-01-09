@@ -1,0 +1,18 @@
+/* Hide notification badges */
+.slack-focus-mode .p-channel_sidebar__channel_suffix .c-mention_badge,
+.slack-focus-mode span[class*="p-channel_sidebar__badge"],
+.slack-focus-mode .p-channel_sidebar__badge,
+.slack-focus-mode .p-channel_sidebar__channel--unread::before,
+.slack-focus-mode .c-mention_badge {
+  display: none !important;
+}
+
+/* Remove bold styling and set specific color for unread channels only */
+.slack-focus-mode .p-channel_sidebar__channel--unread,
+.slack-focus-mode .p-channel_sidebar__channel--unread .p-channel_sidebar__name,
+.slack-focus-mode .p-channel_sidebar__link--unread,
+.slack-focus-mode .p-channel_sidebar__link--unread .p-channel_sidebar__name,
+.slack-focus-mode [data-qa*="channel_sidebar_name"][data-qa$="tobias-molenkamp"] {
+  font-weight: normal !important;
+  color: #5A2E5A !important;
+}
