@@ -3,7 +3,8 @@
 .slack-focus-mode span[class*="p-channel_sidebar__badge"],
 .slack-focus-mode .p-channel_sidebar__badge,
 .slack-focus-mode .p-channel_sidebar__channel--unread::before,
-.slack-focus-mode .c-mention_badge {
+.slack-focus-mode .c-mention_badge,
+.slack-focus-mode .c-button-unstyled.p-channel_sidebar__banner {
   display: none !important;
 }
 
